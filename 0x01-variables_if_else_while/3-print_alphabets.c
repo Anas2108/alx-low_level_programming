@@ -9,21 +9,21 @@
  */
 int main(void)
 {
-char alpha='a';
-   while (alpha<='z')
-   {
-      putchar(alpha);
-      alpha++;
-   }
+char alpha = 'a';
+while (alph a <= 'z')
+{
+putchar(alpha);
+alpha++;
+}
    
-alpha='A';
+alpha = 'A';
 
-   while (alpha<='Z')
-   {
-      putchar(alpha);
-      alpha++;
+while (alpha <= 'Z')
+{
+putchar(alpha);
+alpha++;
 
-   }
+}
 putchar('\n');
    
     
