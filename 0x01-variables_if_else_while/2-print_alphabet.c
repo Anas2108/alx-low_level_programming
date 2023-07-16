@@ -9,16 +9,16 @@
  */
 int main(void)
 {
-   char alpha = 'a';
-   while (alpha<='z')
+char alpha = 'a';
+while (alpha<='z')
   
-   {
-      putchar(alpha);
-      alpha++;
-   }
+{
+putchar(alpha);
+alpha++;
+}
 
-      putchar('\n');
+putchar('\n');
    
     
-   return (0);
+return (0);
 }
