@@ -14,7 +14,7 @@ while (alpha <= 'z')
 {
 putchar(alpha);
 alpha++;
-} 
+}
 alpha = 'A';
 while (alpha <= 'Z')
 {
