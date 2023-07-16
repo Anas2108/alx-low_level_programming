@@ -1,23 +1,20 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - main block
- * Description: print the alphabet using putchar
- * and if it is positive, negative, or zero
+ * Description: Get a random number and check its last digit, compare it with 5
  * Return: 0
  */
 int main(void)
 {
-char alpha = 'a';
+	char alpha = 'a';
 
-while (alpha<='z')
-{
-putchar(alpha);
-alpha++;
-}
+	while (alpha <= 'z')
+	{
+		putchar(alpha);
+		alpha++;
+	}
 
-putchar('\n');
-     
-return (0);
+	putchar('\n');
+	return (0);
 }
