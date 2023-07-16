@@ -7,16 +7,15 @@
  * and if it is positive, negative, or zero
  * Return: 0
  */
-int main()
+int main(void)
 {
 char alpha = 'a';
 while (alpha <= 'z')
 {
 if (alpha != 'q' && alpha != 'e')
 putchar(alpha);
-   
 alpha++;
 }
 putchar('\n');
-return(0);
+return (0);
 }
