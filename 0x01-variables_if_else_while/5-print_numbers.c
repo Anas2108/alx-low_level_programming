@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: print the alphabet (except q and e) using putchar
+ * Description: print numbers from 0 to 9 using putchar
  * and if it is positive, negative, or zero
  * Return: 0
  */
@@ -16,4 +16,5 @@ putchar(num);
 num++;
 }
 putchar('\n');
+return(0);
 }
