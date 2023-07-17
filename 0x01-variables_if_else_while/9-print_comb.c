@@ -13,7 +13,7 @@ int num = 48;
 while (num <= 57)
 {
 putchar((char)num);
-if(num!=57)
+if (num != 57)
 {
 putchar(',');
 putchar(' ');
