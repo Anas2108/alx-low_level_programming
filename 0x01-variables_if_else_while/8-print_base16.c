@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description:print all the numbers of base 16 in lowercase followed by a new line
+ * Description:print all the numbers of base 16 in lowercase
  * and if it is positive, negative, or zero
  * Return: 0
  */
