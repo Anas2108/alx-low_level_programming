@@ -9,10 +9,10 @@
  */
 int main(void)
 {
-int num = 0;
-while (num<10)
+char num = '0';
+while (num <= '9')
 {
-printf("%i",num);
+putchar(num);
 num++;
 }
 putchar('\n');
