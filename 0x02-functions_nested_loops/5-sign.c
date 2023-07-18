@@ -1,6 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -12,20 +9,22 @@
 int print_sign(int n)
 {
 int test;
+
 if (n > 0)
 {
-test = 1;
-putchar('+');
+	test = 1;
+	_putchar('+');
 }
-else if (n < 0)
+else if (n == 0)
 {
-test = -1;
-putchar('-');
+	test = 0;
+	_putchar('0');
 }
 else
 {
-test = 0;
-putchar('0');
+	test = -1;
+	_putchar('-');
 }
+
 return (test);
 }
