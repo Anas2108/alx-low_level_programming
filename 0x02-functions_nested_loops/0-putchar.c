@@ -1,12 +1,19 @@
 #include "main.h"
+
 /**
- * main - main block
- * Description: print the alphabet (except q and e) using putchar
- * and if it is positive, negative, or zero
- * Return: 0
+ * main - Entry point
+ * Return:0
  */
-int main (void)
+
+int main(void)
 {
-printf("_putchar\n");
+char c[9] = "_putchar";
+int i = 0;
+while (i < 8)
+{
+_putchar(c[i]);
+i++;
+}
+_putchar('\n');
 return (0);
 }
