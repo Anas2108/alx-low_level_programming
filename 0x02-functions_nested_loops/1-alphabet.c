@@ -2,12 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 #include "main.h"
+
 /**
- * Description:print the alphabet
- * and if it is positive, negative, or zero
- * Return: 0
- * 
+ * print_alphabet - Entry point
+ * Return:0
  */
+
 void print_alphabet(void)
 {
 char alpha = 'a';
