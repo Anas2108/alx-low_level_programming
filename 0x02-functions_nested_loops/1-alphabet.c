@@ -1,11 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-#include "main"
+#include "main.h"
 /**
 * Description: print the alphabet using putchar
  * and if it is positive, negative, or zero
- * Return: 0
+ * Return: void
  */
 void print_alphabet(void)
 {
@@ -20,8 +20,3 @@ void print_alphabet(void)
 	putchar('\n');
 }
 
-int main(void)
-{
-print_alphabet();
-return (0);
-}
