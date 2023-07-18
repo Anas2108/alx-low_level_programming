@@ -1,19 +1,15 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 #include "main.h"
-
 /**
- * main - Entry point
- * Return:0
+ * main - main block
+ * Description: a program that prints _putchar,followed by a new line
+ * and if it is positive, negative, or zero
+ * Return: 0
  */
-
-int main(void)
+int main (void)
 {
-char c[9] = "_putchar";
-int i = 0;
-while (i < 8)
-{
-_putchar(c[i]);
-i++;
-}
-_putchar('\n');
+printf("_putchar\n");
 return (0);
 }
