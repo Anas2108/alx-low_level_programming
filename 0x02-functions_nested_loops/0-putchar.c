@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include "main.h"
 /**
  * main - main block
  * Description: print the alphabet (except q and e) using putchar
