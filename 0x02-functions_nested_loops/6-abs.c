@@ -11,6 +11,6 @@
 
 int _abs(int num)
 {
-return (n >= 0 ? n : n* -1);
+return (num >= 0 ? num : num * -1);
 }
 
