@@ -4,26 +4,29 @@
  * more_numbers - prints more numbers
  * Return:void
  */
+
 void more_numbers(void)
 {
-int c=0;
-int counter=10;
-while(counter>0)
-{
-while (c < 10)
-{
-putchar('0'+ c);
-c++;
-}
-c = 0;
-while(c < 5)
-{
-putchar('0' + 1);
-putchar('0'+ c);
-c++;
-}
-putchar('\n');
-c=0;
-counter--;
-}
+	char n, c;
+	int i = 0;
+
+
+	while (i < 10)
+	{
+		for (n = 0; n <= 14; n++)
+		{
+			c = n;
+			if (n > 9)
+			{
+				putchar('1');
+				c = n % 10;
+			}
+
+			putchar('0' + c);
+		}
+
+		putchar('\n');
+		i++;
+	}
+
 }
