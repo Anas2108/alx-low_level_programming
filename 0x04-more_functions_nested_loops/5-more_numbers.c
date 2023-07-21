@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * more_numbers - print numbers from 0 to 14 ten times
- * Return: 0
+ * more_numbers - prints more numbers
+ * Return:void
  */
 void more_numbers(void)
 {
@@ -23,6 +23,7 @@ putchar('0'+ c);
 c++;
 }
 putchar('\n');
+c=0;
 counter--;
 }
 }
