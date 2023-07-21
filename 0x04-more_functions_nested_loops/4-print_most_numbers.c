@@ -9,8 +9,7 @@ void print_most_numbers(void)
 int num = 48;
 while (num <= 57)
 {
-if (num == '2' || num == '4')
-continue;
+if (num != 50 && num != 52)
 putchar((char)num);
 num++;
 }
