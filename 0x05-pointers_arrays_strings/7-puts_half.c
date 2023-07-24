@@ -14,11 +14,11 @@ while (str[counter] != '\0')
 {
 counter++;
 }
-if (counter % 2 ==0)
-half =counter /2;
+if (counter % 2 == 0)
+half = counter / 2;
 else
-half= (counter - 1) / 2;
-while (half < counter)
+half = (counter - 1) / 2;
+while (str[half] != '\0')
 {
 putchar(str[half]);
 half++;
