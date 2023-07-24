@@ -9,11 +9,11 @@
 void puts_half(char *str)
 {
 int counter = 0;
+int half = 0;
 while (str[counter] != '\0')
 {
 counter++;
 }
-int half = 0;
 if (counter % 2 ==0)
 half =counter /2;
 else
