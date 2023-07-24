@@ -16,10 +16,3 @@ counter++;
 }
 putchar('\n');
 }
-
-
-int main ()
-{
-    char str[]="aaanas";
-   _puts(str);
-}
