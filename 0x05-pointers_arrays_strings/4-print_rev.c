@@ -14,9 +14,9 @@ while (s[counter] != '\0')
 counter++;
 }
 
-while ((counter-1) >= 0)
+while ((counter - 1) >= 0)
 {
-putchar(s[counter-1]);
+putchar(s[counter - 1]);
 counter--;
 }
 putchar('\n');
