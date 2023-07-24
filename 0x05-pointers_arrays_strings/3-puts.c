@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen -function that print string
+ * _puts -function that print string
  * @str:  pointer
  * Return: void
  */
@@ -17,3 +17,9 @@ counter++;
 putchar('\n');
 }
 
+
+int main ()
+{
+    char str[]="aaanas";
+   _puts(str);
+}
