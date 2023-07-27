@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * string_toupper - reverse a int array
- * @a: pointer
- * Return: char*
+ * *string_toupper - capitalize a string
+ * @str: pointer
+ * Return: capitalzied string
 */
+
 char* string_toupper(char *a)
 {
 int i;
@@ -14,4 +15,3 @@ a[i] -= 32;
 }
 return (a);
 }
-
