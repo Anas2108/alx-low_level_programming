@@ -4,12 +4,13 @@
  *_strncpy - function that copies a string.
  * @dest:  pointer point to the first string
  * @src:  Pointer point to the second string
+ * @n:    number of copied letters
  * Return: char*
  */
 char *_strncpy(char *dest, char *src, int n)
 {
 int i;
-for (i=0; i < n && src[i] != '\0'; i++)
+for (i = 0; i < n && src[i] != '\0'; i++)
 {
 dest[i] = src[i];
 } 
