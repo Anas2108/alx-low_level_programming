@@ -9,20 +9,17 @@
 
 char *_strcat(char *dest, char *src)
 {
-
-int counter=0,src_counter=0;
-
+int counter = 0,src_counter = 0;
 while (dest[counter] != '\0')
 {
 counter++;
 }
 while (src[src_counter] != '\0')
 {
-dest[counter]=src[src_counter];
+dest[counter] = src[src_counter];
 src_counter++;
 counter++;
 }
-dest[counter]='\0';
+dest[counter] = '\0';
 return (dest);
 }
-
