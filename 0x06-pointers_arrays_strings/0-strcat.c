@@ -22,5 +22,7 @@ dest[counter]=src[src_counter];
 src_counter++;
 counter++;
 }
+dest[counter]='\0';
 return (dest);
 }
+
