@@ -1,12 +1,12 @@
 #include "main.h"
-
 /**
- *_strncpy - function that copies a string.
- * @dest:  pointer point to the first string
- * @src:  Pointer point to the second string
- * @n:    number of copied letters
- * Return: char*
- */
+ * *_strncpy - find the length of a string
+ * @dest: pointer to the string
+ * @src: pointer
+ * @n: int
+ * Return: destination
+*/
+
 char *_strncpy(char *dest, char *src, int n)
 {
 int i;
@@ -18,3 +18,4 @@ for ( ; i < n; i++)
 dest[i] = '\0';
 return (dest);
 }
+
