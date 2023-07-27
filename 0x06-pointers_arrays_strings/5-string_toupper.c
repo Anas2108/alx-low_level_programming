@@ -1,17 +1,18 @@
 #include "main.h"
 /**
  * *string_toupper - capitalize a string
- * @str: pointer
+ * @a: pointer
  * Return: capitalzied string
 */
 
-char* string_toupper(char *a)
+char *string_toupper(char *a)
 {
-int i;
-for (i = 0; a[i] != '\0'; i++)
-{
-if (a[i] >= 97 && a[i] <= 122)
-a[i] -= 32;
-}
-return (a);
+	int i;
+
+	for (i = 0; a[i] != '\0'; i++)
+	{
+		if (a[i] >= 97 && a[i] <= 122)
+			a[i] -= 32;
+	}
+	return (a);
 }
