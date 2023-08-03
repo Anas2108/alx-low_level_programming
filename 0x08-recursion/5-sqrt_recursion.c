@@ -1,20 +1,31 @@
 #include "main.h"
 
 /**
- * _pow_recursion - Search a string for any of a set of bytes.
- * @x: base
- * @y: exposant
- * Return: Pointer to the byte in `s` that matches one of the bytes in `accept`
- * or NULL if no such byte is found.
+ * _sqrt_recursion - find natural square root
+ * @n: int
+ * Return: int
  */
 
-int _pow_recursion(int x, int y)
+int _sqrt_recursion(int n)
 {
-if (y < 0)
-return (-1);
-else if (y == 0)
-return (1);
-else if (y == 1)
-return (x);
-return (x * _pow_recursion(x, --y));
+	return (square(n, 1));
+}
+
+/**
+ * square - find square root
+ * @n: int to find square root
+ * @val: square root
+ * Return: int
+ */
+
+int square(int n, int val)
+{
+
+	if (val * val == n)
+		return (val);
+	else if (val * val < n)
+		return  (square(n, val + 1));
+	else
+		return (-1);
+
 }
