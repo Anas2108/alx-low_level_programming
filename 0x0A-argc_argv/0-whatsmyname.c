@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 /**
  * main - function
@@ -6,9 +5,9 @@
  * @argv: offset value
  * Return: 0
  */
+ 
 int main (int argc ,char const *argv[])
 {
-    (void)argc;
-    printf ("%s",argv[0]);
-    return (0);
+printf ("%s\n",argv[argc-1]);
+return (0);
 }
