@@ -44,7 +44,7 @@ l2=strlenn(s2);
 arr = malloc (l1 + l2 + 1);
 
 if (!arr)
-return (NULL);
+return (0);
 
 for (loop1 = 0; loop1 < l1; loop1++)
 {
@@ -57,7 +57,7 @@ for (loop2 = 0; loop2 < l2; loop2++)
 arr[len]=s2[loop2];
 len++;
 }
-
+arr[len] = '\0';
 return (arr);
 
 
