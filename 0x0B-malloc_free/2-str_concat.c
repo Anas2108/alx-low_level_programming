@@ -29,7 +29,7 @@ char *arr;
 int l1 = 0, l2 = 0;
 int len = 0;
 int loop1;
-int loop2; 
+int loop2;
 
 if (!s1)
 s1 = "";
