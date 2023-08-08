@@ -6,7 +6,7 @@
  * Return: length of a string
  */
 
-int strlen (char *str)
+int strlenn (char *str)
 {
 int length=0;
 while (str[length] != '\0')
@@ -34,12 +34,12 @@ int loop1,loop2;
 if (!s1)
 s1 = "";
 else
-l1=strlen(s1);
+l1=strlenn(s1);
 
 if (!s2)
 s2 = "";
 else
-l2=strlen(s2);
+l2=strlenn(s2);
 
 arr = malloc (l1 + l2 + 1);
 
