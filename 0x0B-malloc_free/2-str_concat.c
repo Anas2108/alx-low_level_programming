@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strlen - length of a string
- * @s: input char
+ * strlenn - length of a string
+ * @str: input char
  * Return: length of a string
  */
 
-int strlenn (char *str)
+int strlenn(char *str)
 {
 int length = 0;
 while (str[length] != '\0')
@@ -25,11 +25,11 @@ return (length);
 */
 char *str_concat(char *s1, char *s2)
 {
-char * arr;
-int l1 = 0,l2 = 0;
+char *arr;
+int l1 = 0, l2 = 0;
 int len = 0;
 int loop1;
-int loop2;  
+int loop2; 
 
 if (!s1)
 s1 = "";
@@ -41,7 +41,7 @@ s2 = "";
 else
 l2 = strlenn(s2);
 
-arr = malloc (l1 + l2 + 1);
+arr = malloc(l1 + l2 + 1);
 
 if (!arr)
 return (0);
@@ -62,4 +62,3 @@ return (arr);
 
 
 }
-
