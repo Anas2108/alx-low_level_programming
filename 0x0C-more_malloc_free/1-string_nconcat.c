@@ -1,23 +1,6 @@
 #include "main.h"
 
 /**
- * strlenn - length of a string
- * @str: input char
- * Return: length of a string
- */
-
-int strlenn(char *str)
-{
-int length = 0;
-while (str[length] != '\0')
-{
-length++;
-}
-
-return (length);
-}
-
-/**
  * string_nconcat - concatenates two strings.
  * @s1: first string
  * @s2: second string
@@ -27,43 +10,42 @@ return (length);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *arr;
-unsigned int l1 = 0, l2 = 0;
-int len = 0;
-int loop1;
-int loop2;
+	char *p;
+	unsigned int size1 = 0, size2 = 0, i;
 
-if (!s1)
-s1 = "";
-else
-l1 = strlenn(s1);
+	if (s1 == NULL)
+		s1 = "";
 
-if (!s2)
-s2 = "";
-else
-l2 = strlenn(s2);
+	if (s2 == NULL)
+		s2 = "";
 
-if (n >= l2)
-n = l2;
+	while (s1[size1] != '\0')
+	{
+		size1++;
+	}
 
-arr = malloc(l1 + n + 1);
+	while (s2[size2] != '\0')
+	{
+		size2++;
+	}
 
-if (!arr)
-return (0);
+	if (n > size2)
+	n = size2;
+	p = malloc((size1 + n + 1) * sizeof(char));
 
-for (loop1 = 0; loop1 < l1; loop1++)
-{
-arr[len] = s1[loop1];
-len++;
-}
+	if (p == NULL)
+		return (0);
 
-for (loop2 = 0; loop2 < n; loop2++)
-{
-arr[len] = s2[loop2];
-len++;
-}
-arr[len] = '\0';
-return (arr);
+	for (i = 0; i < size1; i++)
+	{
+		p[i] = s1[i];
+	}
 
+	for (; i < (size1 + n); i++)
+	{
+		p[i] = s2[i - size1];
+	}
+	p[i] = '\0';
 
+return (p);
 }
