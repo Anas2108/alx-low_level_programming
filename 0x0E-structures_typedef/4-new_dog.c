@@ -15,10 +15,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 dog_t *new;
 dog_t new_dog;
 new = &new_dog;
+if (!new)
+{
+return (NULL);
+}
 new->age = age;
 new->name = name;
 new->owner = owner;
-
 return (new);
 }
 
