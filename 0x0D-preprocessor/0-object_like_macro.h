@@ -1,4 +1,4 @@
-#ifdef FILE_H
-#define FILE_H
+#ifndef FILE_MACRO
+#define FILE_MACRO
 #define SIZE 1024
 #endif
