@@ -1,4 +1,13 @@
 #include "variadic_functions.h"
+#include <stdarg.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+/**
+ * print_numbers - prints all numbers with a separator
+ * @separator: separe numbers
+ * @n: int, number of undefined arguments
+ */
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -25,3 +34,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	putchar('\n');
 }
 
+int main(void)
+{
+    print_strings(", ", 2, "Jay", NULL);
+    return (0);
+}
