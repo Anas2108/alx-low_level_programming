@@ -53,7 +53,7 @@ void print_all(const char * const format, ...)
 									{"s", print_str},
 									{NULL, NULL,}} ;
 
-	va_start (list, format);     
+	va_start (list, format);
            
 	while (format && format[i])
 	{
@@ -63,7 +63,7 @@ void print_all(const char * const format, ...)
 		{
 			if (*data_types[j].type == format[i])
 			{
-				printf("%s",separate);
+				printf("%s", separate);
 				data_types[j].caller(list);
 				separate = ", ";
 				break;
