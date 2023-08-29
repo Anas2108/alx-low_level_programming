@@ -19,9 +19,5 @@ while (t)
 {
 	printf("%d\n", t->n);
 	counter++;
-	t->next;
-}
-
-return (counter);
-
+	t = t->next;
 }
